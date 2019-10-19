@@ -4,13 +4,15 @@
 
 * **01 Creating Docker Images and Containers:** View the instructions [here](https://github.com/reselbob/innosoft/tree/master/microservices-architecture/01-wisesayings). Do Exercise 1 and Exercise 2.
 *  **02 Working with Docker Compose:** View the instructions [here](https://github.com/reselbob/dockerdemos/tree/master/foodcourt).
-* **03 Deploying and Running an Application under Kubernetes:** View instructions [here](https://github.com/reselbob/innosoft/tree/master/microservices-architecture/01-wisesayings). Do Exercise 3.
-* **04 Deployment Discovery Under Kubernetes:** View the instructions [here](https://github.com/reselbob/innosoft/tree/master/microservices-architecture/03-deployment-discovery-red-green). Do Exercise 3.
-*  **05 Inferred Service Discovery Under Kubernetes:** View the instructions [here](https://github.com/reselbob/innosoft/tree/master/microservices-architecture/04-service-discovery-k8s).
+* **03 Deploying and Running an Application under Kubernetes:** View the instructions [here](https://github.com/reselbob/innosoft/tree/master/microservices-architecture/01-wisesayings). Do Exercise 3.
+* **04 Working with Kubernetes Secrets:** 
+View the instructions [here](https://github.com/reselbob/k8sdemos/tree/master/secrets).
+* **05 Deployment Discovery Under Kubernetes:** View the instructions [here](https://github.com/reselbob/innosoft/tree/master/microservices-architecture/03-deployment-discovery-red-green). Do Exercise 3.
+*  **06 Inferred Service Discovery Under Kubernetes:** View the instructions [here](https://github.com/reselbob/innosoft/tree/master/microservices-architecture/04-service-discovery-k8s).
 
 ## Day 2
 
-*  **01 Useful Network Commands:** View the instructions here.
+*  **01 Useful Linux Network Commands:** View the instructions [here](linux-network-command.md).
 *  **02 Analyzing Requests and Responses Using Pinger & Postman:** View the instructions here.
 *  **03 Specifying a Microservice using Swagger:** View the instructions here.
 *  **04 Using JMeter to Gather Application Performance Metrics:** View the instructions [here](./jmeter.md).
