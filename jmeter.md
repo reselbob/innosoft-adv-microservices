@@ -12,3 +12,17 @@ Once installed, you'll find the executable in the `./bin` directory. The executa
 
 ## Running a Test
 
+**Step 1:** Go to the GitHub respository that contains the `pinger` application and follow the instructions to get the application up and running on Katacoda. You'll find the instructions [here](https://github.com/reselbob/pinger#building-and-r.unning-pinger-as-a-docker-container-on-katacoda)
+
+**Step 2:** Save the public URL that was created when you brought up `pinger` under Katacoda. (The process is discussed in setup instructions described above in **Step 1**.
+
+**Step 3:** Start up JMeter.
+
+MAC/OSX
+
+`<JMETER_APP_DIRECTORY>/bin/jmeter`
+
+Windows
+
+`<JMETER_APP_DIRECTORY>/bin/jmeter.bat`
+
