@@ -1,0 +1,60 @@
+---
+swagger: "2.0"
+info:
+  description: An API that provides airport code information
+  version: 1.0.0
+  title: Airport Code Lookup
+  contact:
+    email: your@email.here
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+host: localhost
+# basePath: /CogArtTech6/Simple/1.0.0
+tags:
+- name: admins
+  description: Secured Admin-only calls
+- name: developers
+  description: Operations available to regular developers
+schemes:
+- https
+- http
+paths:
+  /airportCodes/{code}:
+    get:
+      tags:
+      - developers
+      summary: gets all airport codes
+      description: |
+        Gets airport information that corresponds to the submitted aiport code system
+      operationId: getAirportCode
+      produces:
+      - application/json
+      parameters:
+      - name: code
+        in: path
+        description: The aiport code to lookup
+        required: true
+        type: string
+      responses:
+        200:
+          description: the result that corresponds to the submitted airport code
+          schema:
+            $ref: '#/definitions/AirportCode'
+        400:
+          description: bad input parameter
+definitions:
+  AirportCode:
+    type: object
+    required:
+    - airport
+    - code
+    properties:
+      airport:
+        type: string
+        example: Los Angeles International Aiport
+      code:
+        type: string
+        example: LAX
+# Added by API Auto Mocking Plugin
+basePath: /apiAirportCodes/1.0.0
