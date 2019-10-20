@@ -19,7 +19,7 @@ View the instructions [here](https://github.com/reselbob/k8sdemos/tree/master/se
 *  **05 Building a Pipeline Using Jenkins:** View the instructions [here](https://github.com/reselbob/fatjenkins).
 
 ## Day 3
-*  **01 Using the Kubernetes Dashboard:** View the instructions here.
+*  **01 Using the Kubernetes Dashboard:** View the instructions [here](./k8s-dashboard.md).
 *  **02 Working with Prometheus and Grafana:** View the instructions here.
 *  **04 Monitoring a Docker Compose Application using Elasticsearch, FluentD and Kibana:** View the instructions [here](https://github.com/reselbob/dockerdemos/tree/master/travelagent).
 *  **04 Working with the current version of the Travel Agent MOA** View the instructions [here](https://github.com/reselbob/travelagent/tree/master/sync).
