@@ -4,6 +4,7 @@ The purpose of this lab is to complete a specification for an API the support th
 
 An Airport Code is the abbereviaton expressed in upper case letters that identifies an aiport. You can find a complete list of airport codes with  corresponding airports [here](http://www.airportcodes.org/). For example, `LAX` indicates Los Angeles International Airport.
 
+
 **Step 1:** Go the [swagger.io](swagger.io) and create an account that allows you to use SwaggerHub to create an API specification using the online Swagger Editor.
 
 
@@ -42,5 +43,9 @@ You can use this "starter" Swagger specification file, [started-airport-code.yam
 
 Contact your instructor if you need clarification, experience any problems or have any questions you need answered.
 
-**Step 7:** Once you are done working the lab, you can compare your work to the example that in this zip file, xxxx. The zip
-file is password protected. Contact the instructor to get the password you need to open the zip file.
+**Step 7:** Once you are done working the lab, you can compare your work to the example that in this zip file, `airport-codes.zip`. The zip
+file is password protected. Contact the instructor to get the password you need to open the zip file. Execute the following command to download the file, airport-codes.zip
+
+`curl -LO https://github.com/reselbob/innosoft-adv-microservices/blob/master/airport-codes.zip`
+
+**Congratulations!** The exercise is complete.

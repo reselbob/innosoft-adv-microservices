@@ -14,7 +14,7 @@ View the instructions [here](https://github.com/reselbob/k8sdemos/tree/master/se
 
 *  **01 Useful Linux Network Commands:** View the instructions [here](linux-network-command.md).
 *  **02 Analyzing Requests and Responses Using Pinger & Postman:** View the instructions here.
-*  **03 Specifying a Microservice using Swagger:** View the instructions here.
+*  **03 Specifying a Microservice using Swagger:** View the instructions [here](./swagger-postman.md).
 *  **04 Using JMeter to Gather Application Performance Metrics:** View the instructions [here](./jmeter.md).
 *  **05 Building a Pipeline Using Jenkins:** View the instructions [here](https://github.com/reselbob/fatjenkins).
 
