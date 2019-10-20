@@ -1,0 +1,64 @@
+---
+swagger: "2.0"
+info:
+  description: An API that provides payment services for the Travel Agent MOA
+  version: 1.0.0
+  title: Travel Agent Payments
+  contact:
+    email: your@email.here
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+host: localhost
+tags:
+- name: admins
+  description: Secured Admin-only calls
+- name: developers
+  description: Operations available to regular developers
+schemes:
+- https
+- http
+paths:
+  /payments{id}:
+    get:
+      tags:
+      - developers
+      summary: gets a known payment
+      description: |
+        Gets payment information according to a unique identifier
+      operationId: getKnownPayment
+      produces:
+      - application/json
+      parameters:
+      - name: id
+        in: path
+        description: The unique identifier of the payment
+        required: true
+        type: string
+      responses:
+        200:
+          description: the result that corresponds to the particular payment
+          schema:
+            $ref: '#/definitions/KnownPayment'
+        400:
+          description: bad input parameter
+definitions:
+  KnownPayment:
+    type: object
+    required:
+    - id
+    - amount
+    - paymentMethod
+    properties:
+      id:
+        type: string
+        format: uuid
+        example: 74931060-dd07-4251-8102-76022e0cbdc5
+      amount:
+        type: number
+        format: float
+        example: 1029.45
+      paymentMethod:
+        type: object
+        example: {"cash":"USD"}
+basePath: /payments/1.0.0

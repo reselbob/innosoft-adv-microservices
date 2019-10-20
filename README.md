@@ -20,7 +20,7 @@ View the instructions [here](https://github.com/reselbob/k8sdemos/tree/master/se
 
 ## Day 3
 *  **01 Using the Kubernetes Dashboard:** View the instructions [here](./k8s-dashboard.md).
-*  **02 Working with Prometheus and Grafana:** View the instructions here.
+*  **02 Working with Prometheus and Grafana:** View the instructions [here](./prometheus-grafana.md).
 *  **04 Monitoring a Docker Compose Application using Elasticsearch, FluentD and Kibana:** View the instructions [here](https://github.com/reselbob/dockerdemos/tree/master/travelagent).
 *  **04 Working with the current version of the Travel Agent MOA** View the instructions [here](https://github.com/reselbob/travelagent/tree/master/sync).
-*  **05 Adding a Payment Service to the Travel Agent (MOA)**
+*  **05 Adding a Payment Service to the Travel Agent (MOA)** View the instructions [here](./ta-payments.md).
