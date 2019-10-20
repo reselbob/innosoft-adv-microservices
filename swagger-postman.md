@@ -8,9 +8,8 @@ An Airport Code is the abbereviaton expressed in upper case letters that identif
 **Step 1:** Go the [swagger.io](swagger.io) and create an account that allows you to use SwaggerHub to create an API specification using the online Swagger Editor.
 
 
-**Step 2:** View the 10 minute video created by Bob Reselman that provides a brief overview for using Swagger Hub. (Bob Reselman is an instructor for Innovation in Software.)
+**Step 2:** View [this 10 minute video](https://www.youtube.com/watch?v=-dG2984SDyQ&t=2s) created by Bob Reselman that provides a brief overview for using Swagger Hub. (Bob Reselman is an instructor for Innovation in Software.)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-dG2984SDyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Step 3:** Create an API sepcification for Airport Codes the describes the following endpoints:
 
@@ -22,7 +21,7 @@ POST api/airportCodes
 
 An airportCode is defined as:
 
-```json
+```javascript
 {
   airport: string,
   code: string
