@@ -40,4 +40,4 @@ You should make it so that your implementation can be encapsulated into a Docker
 
 **NOTE:** This is a fairly complex assignment. You do not have to complete all of it. _It's about the journey, not the destination._ A reasonable approach is to focus on each step as a discrete deliverable that can be handed off to another party for completion.
 
-Also, **in terms of working with Swagger and Docker**, you are expected to have a general understanding of the technologies. Mastery of the operational details is not required. Rather, consider the instructor to be your "expert Swagger/Docker consultant". Do you design work and then call upon the instructor to help you work through the details of concrete implementation under Swagger and Docker.
+Also, **in terms of working with Swagger and Docker**, you are expected to have a general understanding of the technologies. Mastery of the operational details is not required. Rather, consider the instructor to be your "expert Swagger/Docker consultant". Do your design work and then call upon the instructor to help you work through the details of concrete implementation under Swagger and Docker.
