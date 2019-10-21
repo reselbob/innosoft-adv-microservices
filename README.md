@@ -4,7 +4,8 @@
 
 * **01 Creating Docker Images and Containers:** View the instructions [here](https://github.com/reselbob/innosoft/tree/master/microservices-architecture/01-wisesayings). Do Exercise 1 and Exercise 2.
 *  **02 Working with Docker Compose:** View the instructions [here](https://github.com/reselbob/dockerdemos/tree/master/foodcourt).
-* **03 Deploying and Running an Application under Kubernetes:** View the instructions [here](https://github.com/reselbob/innosoft/tree/master/microservices-architecture/01-wisesayings). Do Exercise 3.
+* **03 Deploying and Running an Application under Kubernetes:** View the instructions [here](
+https://github.com/reselbob/innosoft/tree/master/microservices-architecture/01-wisesayings#exercise-3-build-and-run-wise-sayings-within-an-existing-kubernetes-cluster). Do Exercise 3.
 * **04 Working with Kubernetes Secrets:** 
 View the instructions [here](https://github.com/reselbob/k8sdemos/tree/master/secrets).
 * **05 Deployment Discovery Under Kubernetes:** View the instructions [here](https://github.com/reselbob/innosoft/tree/master/microservices-architecture/03-deployment-discovery-red-green). Do Exercise 3.
