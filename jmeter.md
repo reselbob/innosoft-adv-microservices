@@ -20,9 +20,65 @@ Once installed, you'll find the executable in the `./bin` directory. The executa
 
 MAC/OSX
 
-`<JMETER_APP_DIRECTORY>/bin/jmeter`
+`sh <JMETER_APP_DIRECTORY>/bin/jmeter.sh`
 
 Windows
 
 `<JMETER_APP_DIRECTORY>/bin/jmeter.bat`
 
+You'll be presented with the UI shown below.
+
+![jmeter 1](./images/jmeter/jmeter-01.png)
+
+
+**Step 4:**
+
+![jmeter 2](./images/jmeter/jmeter-02.png)
+
+**Step 5:**
+
+![jmeter 3](./images/jmeter/jmeter-03.png)
+
+**Step 5:**
+
+![jmeter 4](./images/jmeter/jmeter-04.png)
+
+**Step 6:**
+
+![jmeter 5](./images/jmeter/jmeter-05.png)
+
+**Step 7:**
+
+![jmeter 6](./images/jmeter/jmeter-06.png)
+
+**Step 8:**
+
+![jmeter 7](./images/jmeter/jmeter-07.png)
+
+**Step 9:**
+
+![jmeter 8](./images/jmeter/jmeter-08.png)
+
+**Step 10:**
+
+![jmeter 9](./images/jmeter/jmeter-09.png)
+
+**Step 11:**
+
+![jmeter 10](./images/jmeter/jmeter-10.png)
+
+**Step 12:**
+
+![jmeter 11](./images/jmeter/jmeter-11.png)
+
+**Step 13:**
+
+![jmeter 12](./images/jmeter/jmeter-12.png)
+
+**Step 14:**
+
+![jmeter 13](./images/jmeter/jmeter-13.png)
+
+**Step 15:**
+
+![jmeter 14](./images/jmeter/jmeter-14.png)
