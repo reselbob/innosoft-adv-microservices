@@ -10,6 +10,8 @@ https://github.com/reselbob/innosoft/tree/master/microservices-architecture/01-w
 View the instructions [here](https://github.com/reselbob/k8sdemos/tree/master/secrets).
 * **05 Deployment Discovery Under Kubernetes:** View the instructions [here](https://github.com/reselbob/innosoft/tree/master/microservices-architecture/03-deployment-discovery-red-green).
 *  **06 Inferred Service Discovery Under Kubernetes:** View the instructions [here](https://github.com/reselbob/innosoft/tree/master/microservices-architecture/04-service-discovery-k8s).
+*  **07 Working with Kubernetes Ingress (OPTIONAL):** View the instructions [here](https://github.com/reselbob/k8sdemos/tree/master/ingress). 
+*  **08 Working with a Service Mesh Ingress and Egress (OPTIONAL):** View the instructions [here](https://github.com/reselbob/k8sdemos/tree/master/service-mesh). 
 
 ## Day 2
 
