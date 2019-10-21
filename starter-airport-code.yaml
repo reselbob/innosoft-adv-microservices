@@ -55,4 +55,4 @@ definitions:
       code:
         type: string
         example: LAX
-basePath: /apiAirportCodes/1.0.0
+basePath: /airportCodes/1.0.0
