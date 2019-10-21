@@ -1,0 +1,194 @@
+---
+swagger: "2.0"
+info:
+  description: An API for a REST resource that represents a coupon.
+  version: 1.0.0
+  title: Coupon API
+  contact:
+    email: your@email.here
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+host: localhost
+tags:
+- name: admins
+  description: Secured Admin-only calls
+- name: developers
+  description: Operations available to regular developers
+schemes:
+- https
+- http
+paths:
+  /coupons/{id}:
+    get:
+      tags:
+      - developers
+      summary: gets a coupon from the system
+      description: |
+        Gets a coupon from the system
+      operationId: getCoupon
+      produces:
+      - application/json
+      parameters:
+      - name: id
+        in: path
+        description: The unique identifier of the coupon
+        required: true
+        type: string
+      responses:
+        200:
+          description: the result that corresponds to the submitted coupon
+          schema:
+            $ref: '#/definitions/KnownCoupon'
+        400:
+          description: bad input parameter
+    delete:
+      tags:
+      - developers
+      summary: deletes a coupon from the system
+      description: |
+        Deletes a coupon from the system
+      operationId: deleteCoupon
+      produces:
+      - application/json
+      parameters:
+      - name: id
+        in: path
+        description: The unique identifier of the coupon
+        required: true
+        type: string
+      responses:
+        200:
+          description: the result that corresponds to the deleted coupon
+          schema:
+            $ref: '#/definitions/KnownCoupon'
+        400:
+          description: bad input parameter
+  /coupons:
+    get:
+      tags:
+      - developers
+      summary: gets all coupons from the system
+      description: |
+        Gets all coupons from the system
+      operationId: getCoupons
+      produces:
+      - application/json
+      parameters:
+      - name: searchterm
+        in: query
+        description: The optional search term to process
+        required: true
+        type: string
+      responses:
+        200:
+          description: the result that corresponds to the submitted search term. If no search term is submitted all coupons are returned.
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/KnownCoupon'
+        400:
+          description: bad input parameter
+    put:
+      tags:
+      - developers
+      summary: Updates a coupon in the system
+      description: |
+        Updates a coupon in the system
+      operationId: putCoupon
+      produces:
+      - application/json
+      parameters:
+        - in: body
+          name: coupon
+          description: The coupon to create
+          schema:
+            $ref: '#/definitions/KnownCoupon'
+      responses:
+        200:
+          description: the result that corresponds to the updated coupon
+          schema:
+            $ref: '#/definitions/KnownCoupon'
+        400:
+          description: bad input parameter
+    post:
+      tags:
+      - developers
+      summary: Adds a new coupon to the system
+      description: |
+        Adds a new coupon to the system
+      operationId: postCoupon
+      produces:
+      - application/json
+      parameters:
+        - in: body
+          name: coupon
+          description: The coupon to create
+          schema:
+            $ref: '#/definitions/Coupon'
+      responses:
+        200:
+          description: the result that corresponds to the added new coupon
+          schema:
+            $ref: '#/definitions/KnownCoupon'
+        400:
+          description: bad input parameter
+definitions:
+  Coupon:
+    type: object
+    required:
+    - title
+    - termsAndConditions
+    - appliesTo
+    - discount
+    - startDate
+    - endDate
+    - issuer
+    properties:
+      title:
+        type: string
+        example: Oktoberfest Special
+      description:
+        type: string
+        example: A discount on Oktoberfest food and drink
+      termsAndConditions:
+        type: string
+        example: Only applicable one per customer
+      appliesTo:
+        type: string
+        example: Adults over 21
+      discount:
+        type: number
+        format: float
+        example: .25
+      isPercentage:
+        type: boolean
+        example: true
+      startDate:
+        type: string
+        format: date-time
+        example: 2019-11-13T20:20:39+00:00
+      endDate:
+        type: string
+        format: date-time
+        example: 2019-12-13T20:20:39+00:00
+      redemptionDate:
+        type: string
+        format: date-time
+        example: 2019-12-01T12:20:39+00:00
+      issuer:
+        type: object
+      redeemer:
+        type: object
+  KnownCoupon:
+    type: object
+    allOf:
+     - $ref: '#/definitions/Coupon'
+    required:
+      - id
+    properties:
+      id:
+        type: string
+        format: uuid
+        example: 6225fff2-c543-4589-af2b-f3e4c5498095
+basePath: /coupon/1.0.0

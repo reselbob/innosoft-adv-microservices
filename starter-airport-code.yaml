@@ -10,7 +10,6 @@ info:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
 host: localhost
-# basePath: /CogArtTech6/Simple/1.0.0
 tags:
 - name: admins
   description: Secured Admin-only calls
@@ -56,5 +55,4 @@ definitions:
       code:
         type: string
         example: LAX
-# Added by API Auto Mocking Plugin
 basePath: /apiAirportCodes/1.0.0
