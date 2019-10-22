@@ -47,7 +47,7 @@ Once you click the icon, an Open dialog appears.
 
 ![jmeter 6](./images/jmeter/jmeter-04.png)
 
-**Step 7:** Next need to subsitute the default URL to an aribtrary instance of `pinger` running on Katacoda with the actual URL for the instance you created in **Step 1**.
+**Step 7:** Next need to substitute the default URL to an aribtrary instance of `pinger` running on Katacoda with the actual URL for the instance you created in **Step 1**.
 
 Click the test plans HTTP Request, named `API Endpoint` as shown on the left side of the figure below. You'll be presented the HTTP Request UI. The value we're going to substitute is the one in the `Server Name or IP` textbox as shown in the illustration below.
 
@@ -75,26 +75,64 @@ The `CSV Data Set Config` dialog will appear.
 
 ![jmeter 11](./images/jmeter/jmeter-08b.png)
 
-**Step 12:**
+The file `Open` dialog will appear.
+
+**Step 12:** Navigate to this `jmeter` directory in this project's directory on your local file system and select the file, `pinger-params.csv.`. Select the file and then click the `Open` button.
 
 ![jmeter 12](./images/jmeter/jmeter-09.png)
 
-**Step 13:**
+The contets of the file, `pinger-params.csv` is shown below.
+
+```text
+type
+networkInfo
+requestHeaders
+envVars
+memoryUsage
+requestUrl
+remoteAddress
+```
+The `csv` file describes the the query string parameters that are suppoted by the microservice, `pinger`.
+
+**Step 13:** The full path of the `csv` will be in the `filename` textbox of the CSV Data Set Config UI, as shown below. 
 
 ![jmeter 13](./images/jmeter/jmeter-10.png)
 
-**Step 14:**
+**Step 14:** We're going to increase the `Loop Count` of the thread group that is executing the text. We nee to increase the `Loop Count` in order to ensure that all the query string values defined in the  `csv` are called.
+
+Click the thread group, `Microservice Caller` on the left side of the JMeter Ui. You'll see the `Loop Count` textbox in the center of the UI, as shown in the figure below.
 
 ![jmeter 14](./images/jmeter/jmeter-11.png)
 
-**Step 15:**
+**Step 15:** The increase the value in the `Loop Count` textbox from 1 to 10. Also, decrease the value in the `Ramp-Up Perios (in seconds) from 10 to 5.
 
 ![jmeter 15](./images/jmeter/jmeter-12.png)
 
-**Step 16:**
+**Step 16:** Next we need to configure the HTTP Request to call the values defined in the `csv`. file,
+
+Click on the HTTP Request titled, `API Endpoint`. This will display the HTTP Request UI.
+
+At the bottom of the UI you'll see a section, `Send Parameters With the Request`. Click the `Add` button. A new row will appear.
+
+Enter the string, `type` in the Name column. Enter the string `${type} in the Value column,
+
+**WHERE**
+
+* `type` is the value in the heading row of the `csv` file,
+*  `${type}` is a variable into which each value in each row of the `csv` will be assigned.
 
 ![jmeter 16](./images/jmeter/jmeter-13.png)
 
-**Step 17:**
+**Step 17:** Now we'll run the test. Click `View Results Tree` as shown in the figure below (1).  The `View Results Tree` is a type o [JMeter Listener](https://jmeter.apache.org/usermanual/listeners.html) that captures responses from an HTTP request.
+
+Click the green Start arrow icon (2). This will invoke the test. You'll see the responses appear the Test panel of the `View Results Tree` Listener (3).
+
+Click the `Response Body` tab in the `View Results Tree` Listener (4). You'll see the JSON emitted as a response from the `pinger` microservice in the `Response Body` panel (5). (See the figure below.) 
 
 ![jmeter 17](./images/jmeter/jmeter-14.png)
+
+**Congratulations!** You've just completed a basic JMeter test that's data driven using a `csv` file.
+
+For an added experience visualizing test results, add a `Aggregate Graph` Listener to the test, run the test again and observe the results.
+
+![jmeter extra](./images/jmeter/jmeter-15.png)
