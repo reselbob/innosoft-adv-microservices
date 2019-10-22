@@ -31,54 +31,70 @@ You'll be presented with the UI shown below.
 ![jmeter 1](./images/jmeter/jmeter-01.png)
 
 
-**Step 4:**
+**Step 4:** We're going to add a pre-existing preformance test that is saved to a a file, `simple-pinger-test-plan.jmx`.
+
+Click the open file icon on the upper left of the JMeter icon bar as shwown in the figure below.
 
 ![jmeter 2](./images/jmeter/jmeter-02.png)
 
-**Step 5:**
+Once you click the icon, an Open dialog appears.
+
+**Step 5:** Navigate your local file system to the location where you cloned the source code for this exercise from GitHub. Select the file,  `simple-pinger-test-plan.jmx` and click the Open button on the lower right of the dialog box.
 
 ![jmeter 3](./images/jmeter/jmeter-03.png)
 
-**Step 5:**
+**Step 6:**: You'll see test plan load into the UI as shown in the figure below.
 
-![jmeter 4](./images/jmeter/jmeter-04.png)
+![jmeter 6](./images/jmeter/jmeter-04.png)
 
-**Step 6:**
+**Step 7:** Next need to subsitute the default URL to an aribtrary instance of `pinger` running on Katacoda with the actual URL for the instance you created in **Step 1**.
 
-![jmeter 5](./images/jmeter/jmeter-05.png)
+Click the test plans HTTP Request, named `API Endpoint` as shown on the left side of the figure below. You'll be presented the HTTP Request UI. The value we're going to substitute is the one in the `Server Name or IP` textbox as shown in the illustration below.
 
-**Step 7:**
+![jmeter 7](./images/jmeter/jmeter-05.png)
 
-![jmeter 6](./images/jmeter/jmeter-06.png)
+**Step 8:** Go back to the Katacoda web page were your instance of `pinger` is running. Copy the Katacoda domain name that is particular to your running instance. The figure below shows an example of a domain name to copy.
 
-**Step 8:**
+![jmeter 8](./images/jmeter/jmeter-06.png)
 
-![jmeter 7](./images/jmeter/jmeter-07.png)
+Yours will be different.
 
-**Step 9:**
+**Step 9:** Paste the domain name copied in the previous step into the `Server Name or IP` textbox as shown in the illustration below.
 
-![jmeter 8](./images/jmeter/jmeter-08.png)
+![jmeter 9](./images/jmeter/jmeter-07.png)
 
-**Step 10:**
+**Step 10:** Next we need to as the `csv` file that will contain the query parameters that the performance test will cycle through.
 
-![jmeter 9](./images/jmeter/jmeter-09.png)
+Select right click on thread group, `Microservice Caller` then click, `Add` followed by `Config Element` and then `CSV Data Set Config` as shown in the figure below.
 
-**Step 11:**
+![jmeter 9](./images/jmeter/jmeter-08a.png)
 
-![jmeter 10](./images/jmeter/jmeter-10.png)
+The `CSV Data Set Config` dialog will appear.
+
+**Step 11:** Select the `Browse` button as shown in the figure below.
+
+![jmeter 11](./images/jmeter/jmeter-08b.png)
 
 **Step 12:**
 
-![jmeter 11](./images/jmeter/jmeter-11.png)
+![jmeter 12](./images/jmeter/jmeter-09.png)
 
 **Step 13:**
 
-![jmeter 12](./images/jmeter/jmeter-12.png)
+![jmeter 13](./images/jmeter/jmeter-10.png)
 
 **Step 14:**
 
-![jmeter 13](./images/jmeter/jmeter-13.png)
+![jmeter 14](./images/jmeter/jmeter-11.png)
 
 **Step 15:**
 
-![jmeter 14](./images/jmeter/jmeter-14.png)
+![jmeter 15](./images/jmeter/jmeter-12.png)
+
+**Step 16:**
+
+![jmeter 16](./images/jmeter/jmeter-13.png)
+
+**Step 17:**
+
+![jmeter 17](./images/jmeter/jmeter-14.png)
