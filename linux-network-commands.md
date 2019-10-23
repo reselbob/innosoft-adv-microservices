@@ -50,7 +50,7 @@ lo        Link encap:Local Loopback
 
 _ping (Packet INternet Groper) command tests connectivity between two nodes._
 
-Example: `ifconfig nbc.com`
+Example: `ping nbc.com`
 
 * To read the manual page type, `man ping `.
 * To  get help type, `ping --help`.
