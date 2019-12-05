@@ -15,10 +15,15 @@ View the instructions [here](https://github.com/reselbob/k8sdemos/tree/master/se
 
 ## Day 2
 
-*  **01 Specifying a Microservice using Swagger:** View the instructions [here](./swagger-postman.md).
-*  **02 Building a Pipeline Using Jenkins:** View the instructions [here](https://github.com/reselbob/fatjenkins).
-*  **03 Using the Kubernetes Dashboard:** View the instructions [here](./k8s-dashboard.md).
-*  **04 Working with Prometheus and Grafana:** View the instructions [here](./prometheus-grafana.md).
-*  **05 Monitoring a Docker Compose Application using Elasticsearch, FluentD and Kibana:** View the instructions [here](https://github.com/reselbob/dockerdemos/tree/master/travelagent).
-*  **06 Working with the current version of the Travel Agent MOA** View the instructions [here](https://github.com/reselbob/travelagent/tree/master/sync).
-*  **07 Adding a Payment Service to the Travel Agent (MOA)** View the instructions [here](./ta-payments.md).
+*  **01 Useful Linux Network Commands:** View the instructions [here](./linux-network-commands.md).
+*  **02 Analyzing Requests and Responses Using Pinger & Postman:** View the instructions [here](./pinger-postman.md).
+*  **03 Specifying a Microservice using Swagger:** View the instructions [here](./swagger-postman.md).
+*  **04 Using JMeter to Gather Application Performance Metrics:** View the instructions [here](./jmeter.md).
+*  **05 Building a Pipeline Using Jenkins:** View the instructions [here](https://github.com/reselbob/fatjenkins).
+
+## Day 3
+*  **01 Using the Kubernetes Dashboard:** View the instructions [here](./k8s-dashboard.md).
+*  **02 Working with Prometheus and Grafana:** View the instructions [here](./prometheus-grafana.md).
+*  **03 Monitoring a Docker Compose Application using Elasticsearch, FluentD and Kibana:** View the instructions [here](https://github.com/reselbob/dockerdemos/tree/master/travelagent).
+*  **04 Working with the current version of the Travel Agent MOA** View the instructions [here](https://github.com/reselbob/travelagent/tree/master/sync).
+*  **05 Adding a Payment Service to the Travel Agent (MOA)** View the instructions [here](./ta-payments.md).
