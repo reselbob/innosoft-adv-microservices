@@ -6,6 +6,11 @@ The purpose of this exercise is to create a Kubernetes deployment and Kubernetes
 
 `https://katacoda.com/javajon/courses/kubernetes-fundamentals/minikube`
 
+Start minikube:
+
+`minikube start`
+
+
 **Step 2:** Click the Kubernetes Dashboard tab in the menu of the Katacoda interactive learning environment.
 
 **Step 3:** Click the `Create` button on the right side of the Dashboard. This will expose the Dashboard's YAML input editor.
