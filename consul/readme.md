@@ -39,7 +39,7 @@ In this case the IP address is: `172.17.0.29`. Your IP address will probably be 
 
 `IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' c1); echo $IP`
 
-** Be advised:** The IP address of the Consul server will be different than the IP address of the Katacoda host.
+**Be advised:** The IP address of the Consul server will be different than the IP address of the Katacoda host.
 
 **Step 5:** Query the Consul server for a list of known services:
 
